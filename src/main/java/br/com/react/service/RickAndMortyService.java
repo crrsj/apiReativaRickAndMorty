@@ -22,7 +22,7 @@ public class RickAndMortyService {
 	    // Cache simples em memória
 	    private final List<CharacterResult> cache = new CopyOnWriteArrayList<>();
 
-	    // ✅ Método principal com cache
+	    //  Método principal com cache
 	    public Mono<List<CharacterResult>> getAllCharactersFromCache() {
 	        if (cache.isEmpty()) {
 	            return getCharactersByPage(1, new ArrayList<>())
